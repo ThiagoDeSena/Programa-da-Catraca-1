@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj": {}
+  },
+  "projects": {
+    "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj",
+        "projectName": "catracaControl",
+        "projectPath": "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj",
+        "packagesPath": "/home/pi/.nuget/packages/",
+        "outputPath": "/home/pi/ProgramaCatracaC#/Catraca1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/pi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Newtonsoft.json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Device.Gpio": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "dotenv.net": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/pi/.dotnet/sdk/6.0.413/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
