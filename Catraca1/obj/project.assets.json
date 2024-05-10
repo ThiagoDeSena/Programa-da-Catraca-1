@@ -4358,24 +4358,31 @@
     ]
   },
   "packageFolders": {
-    "/home/pi/.nuget/packages/": {}
+    "C:\\Users\\Thiago de sena\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj",
+      "projectUniqueName": "C:\\Users\\Thiago de sena\\Documents\\Catraca IFCE\\Programa da Catraca 1 em C#\\Catraca1\\catracaControl.csproj",
       "projectName": "catracaControl",
-      "projectPath": "/home/pi/ProgramaCatracaC#/Catraca1/catracaControl.csproj",
-      "packagesPath": "/home/pi/.nuget/packages/",
-      "outputPath": "/home/pi/ProgramaCatracaC#/Catraca1/obj/",
+      "projectPath": "C:\\Users\\Thiago de sena\\Documents\\Catraca IFCE\\Programa da Catraca 1 em C#\\Catraca1\\catracaControl.csproj",
+      "packagesPath": "C:\\Users\\Thiago de sena\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thiago de sena\\Documents\\Catraca IFCE\\Programa da Catraca 1 em C#\\Catraca1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/pi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Thiago de sena\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4388,6 +4395,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4446,7 +4458,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/pi/.dotnet/sdk/6.0.413/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
