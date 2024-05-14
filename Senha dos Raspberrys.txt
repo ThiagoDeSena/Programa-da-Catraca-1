@@ -1,0 +1,5 @@
+Usuário e senha dos Raspberrys que se encontram nas Catracas do Campus Maracanaú.
+Criação da senha em 05/2024
+
+usuário: pi
+senha: 12345678
