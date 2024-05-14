@@ -44,7 +44,17 @@ informações relevantes ao guarda de segurança responsável pelo monitoramento
 - Sistema operacional Raspbian
 - Linguagem de programação C#
 - Framework .NET
-- API do IF
+- API do IFCE
+
+## Funcionamento
+
+- O usuário aproxima o cartão de acesso do leitor RFID conectado ao Raspberry Pi.
+- O Raspberry Pi lê o código do cartão e o envia para a aplicação .NET.
+- A aplicação .NET consulta a API do IF para verificar se o cartão é válido e se o usuário está autorizado a entrar no campus.
+- Se o cartão for válido, a aplicação .NET envia um sinal para o Raspberry Pi liberar a catraca.
+- A catraca é liberada e o usuário pode entrar no campus.
+- A aplicação .NET também exibe as informações do usuário na tela do monitor do guarda, como nome, foto e curso.
+- Se o cartão não for válido, a catraca permanece bloqueada e o usuário não pode entrar no campus.
 
 ## Explicação do Projeto
 
@@ -53,19 +63,21 @@ informações relevantes ao guarda de segurança responsável pelo monitoramento
 
 ## Benefícios
 
-- Atualizações em Tempo Real: As taxas de câmbio são sempre as mais recentes, garantindo conversões precisas.
-- Fácil de Usar: A interface no console é intuitiva e simples de navegar, tornando o conversor acessível a todos.
-- Versátil: Suporta as principais moedas da América do Sul, permitindo conversões entre diferentes países.
-- Flexível: O usuário pode realizar quantas conversões desejar, sem restrições.
-- Eficiente: O programa é leve e executa as conversões rapidamente.
- 
+
+:heavy_check_mark: `Acessibilidade:`Permite a entrada rápida e eficiente de pessoas autorizadas no campus.
+
+:heavy_check_mark: `Segurança:`Controla o acesso ao campus e impede a entrada de pessoas não autorizadas.
+
+:heavy_check_mark: `Transparência:` Fornece informações relevantes ao guarda de segurança sobre o usuário que está entrando no campus.
+
+:heavy_check_mark: `Modernização:` Implementa uma solução tecnológica moderna e eficiente para o controle de acesso.
+
+
 
 ## Público-alvo
 
-- Pessoas que desejam converter moedas de forma rápida e precisa.
-- Estudantes de programação que buscam aprimorar suas habilidades em Java e APIs.
-- Desenvolvedores que desejam criar seus próprios conversores de moedas ou integrar a funcionalidade de conversão em seus projetos.
+- Comunidade interna e externa que frequenta o campus do IFCE de Maracanaú.
 
 ## Desenvolvedores
 
-[<img src="https://media.licdn.com/dms/image/D4E35AQFJkU439fActQ/profile-framedphoto-shrink_400_400/0/1698097968031?e=1715540400&v=beta&t=VdZUAGax4wmt-TX6zh2bUZ80rPDE__MLTAtpaqE0zsI" width=115><br><sub>Thiago De Sena</sub>](https://www.linkedin.com/in/thiago-de-sena-ab5b09179/)
+[<img src="https://avatars.githubusercontent.com/u/110785400?v=4" width=115><br><sub>Thiago De Sena</sub>](https://www.linkedin.com/in/thiago-de-sena-ab5b09179/)
