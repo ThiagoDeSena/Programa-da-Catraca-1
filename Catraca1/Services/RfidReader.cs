@@ -81,10 +81,17 @@ namespace CatracaControlClient.Services
                         }
                         string dadosTagSaida = facilityStr + cardCodeStr;
                         Console.WriteLine($"{tipoLeitor}: {dadosTagSaida}");
-                        
+
+                        string tipoMovimentacao = "0"; 
+                        if(tipoLeitor == "Entrada"){
+                            tipoMovimentacao = "1";
+                        }else if(tipoLeitor == "Saida"){
+                            tipoMovimentacao = "2";
+                        }
+
                         //dadosTagSaida = "21646000";
                         // Chamar a API para validar entrada
-                        bool autorizacao = await comunicationApi.GetUser(dadosTagSaida);
+                        bool autorizacao = await comunicationApi.GetUser(dadosTagSaida,tipoMovimentacao,numCatraca);
 
                         if (autorizacao)
                         {

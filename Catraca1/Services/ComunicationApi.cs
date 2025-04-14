@@ -23,14 +23,14 @@ namespace CatracaControlClient.Services
             public string Clearcode {get;set;}
         }
         //verifica se o cartão é válido
-        public async Task<bool> GetUser(string dadosTag)
+        public async Task<bool> GetUser(string dadosTag,string tipoMovimentacao, string numeroCatraca)
         {
             try
             {
-                var requestUri = new Uri($"{baseUri}tag?cartao={dadosTag}&usuario={usuario}&senha={senha}");
+                var requestUri = new Uri($"{baseUri}tag?cartao={dadosTag}&tipoMovimentacao={tipoMovimentacao}&numeroCatraca={numeroCatraca}&usuario={usuario}&senha={senha}");
 
                 //Mostra valor da variável requestUri
-                //System.Console.WriteLine($"Get: {requestUri}");
+                //System.Console.WriteLine($"GET: {requestUri}");
                 
                 HttpResponseMessage response = await httpClient.GetAsync(requestUri);
 
@@ -93,7 +93,7 @@ namespace CatracaControlClient.Services
                 var requestUri = new Uri($"{baseUri}{queryString}");
 
                 //Mostra valor da variável requestUri
-                //System.Console.WriteLine($"Post: {requestUri}");
+                //System.Console.WriteLine($"POST: {requestUri}");
 
                 var response = await httpClient.PostAsync(requestUri, null);
 
